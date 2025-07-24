@@ -244,103 +244,90 @@
     </section>
 
     <!-- Latest Deals Section (Now AFTER Plants Lover) -->
-    <section class="px-4 lg:px-8 py-16 bg-orange-50">
+    <section class="px-4 lg:px-8 py-16">
       <div class="max-w-7xl mx-auto">
+        <!-- Header -->
         <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4 font-noto-serif">
-            Latest Deals
+          <h2 class="text-[3.125rem] font-bold text-gray-900 mb-6 font-noto-serif">
+            <span style="color: #e95a08">Latest</span> Deals
           </h2>
-          <p class="text-gray-600">Don't miss our special offers</p>
+          <p class="text-[1.37rem] font-normal">
+            Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br>
+            classic roses to exotic blooms, we offer a wide variety of fresh.
+          </p>
         </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div
-            class="relative bg-gradient-to-r from-floral-pink to-floral-orange rounded-2xl overflow-hidden shadow-xl"
-          >
-            <img
-              src="/lovable-uploads/011e9c6c-b997-4caa-af34-7754c3281e8a.png"
-              alt="Deal"
-              class="w-full h-64 object-cover opacity-80"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center"
-            >
-              <div class="p-8 text-white">
-                <h3 class="text-2xl font-bold mb-2">25% Off - Rose Plant</h3>
-                <p class="mb-4">Beautiful red roses for your garden</p>
-                <button
-                  class="bg-white text-floral-red px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-                >
-                  Shop Now
-                </button>
-              </div>
+    
+        <!-- Deals Grid -->
+        <div class="flex flex-col lg:flex-row gap-[25px] w-full">
+          <!-- Left Column: Two stacked images -->
+          <div class="flex flex-col gap-[25px] w-full lg:w-1/3">
+            <div class="w-full">
+              <img
+                src="assets/deal-bloom.png"
+                alt="Deal 1"
+                class="w-full h-auto rounded-2xl object-cover"
+              />
+            </div>
+            <div class="w-full">
+              <img
+                src="assets/deal-ana.png"
+                alt="Deal 2"
+                class="w-full h-auto rounded-2xl object-cover"
+              />
             </div>
           </div>
-
-          <div
-            class="relative bg-gradient-to-r from-floral-yellow to-floral-green rounded-2xl overflow-hidden shadow-xl"
-          >
+    
+          <!-- Right Column: One tall image -->
+          <div class="w-full lg:w-2/3">
             <img
-              src="/lovable-uploads/91695daf-470e-4b8b-9329-64ffab6bb773.png"
-              alt="Deal"
-              class="w-full h-64 object-cover opacity-80"
+              src="assets/deal-zabo.png"
+              alt="Deal 3"
+              class="w-full h-full rounded-2xl object-cover"
             />
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center"
-            >
-              <div class="p-8 text-white">
-                <h3 class="text-2xl font-bold mb-2">30% Off - Wild Flowers</h3>
-                <p class="mb-4">Colorful wildflower collection</p>
-                <button
-                  class="bg-white text-floral-yellow px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-                >
-                  Shop Now
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
+    
 
-    <!-- Join Section -->
-    <section
-      class="px-4 lg:px-8 py-24 relative"
-      style="
-        background-image: url('/lovable-uploads/91695daf-470e-4b8b-9329-64ffab6bb773.png');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-      "
-    >
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="max-w-4xl mx-auto text-center relative z-10">
-        <h2
-          class="text-4xl lg:text-5xl font-bold text-white mb-6 font-noto-serif"
-        >
-          Join The Colorful Bunch
-        </h2>
-        <p class="text-xl text-white/90 mb-8">
-          Subscribe to get the latest updates on new arrivals and special offers
-        </p>
+ <!-- Join Section -->
+ <section
+ class="px-0 py-0 relative flex justify-center w-full max-h-33rem"
+ style="
+   background-image: url('assets/news-letter-bg.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   
+ "
+>
+ <div class="absolute inset-0 bg-black/50"></div>
+ <div class="max-w-4xl mx-auto text-center relative z-10 flex flex-col justify-center items-center h-full min-h-screen">
+   <h2
+     class="text-4xl lg:text-5xl font-bold text-white mb-6 font-noto-serif"
+   >
+     Join the colorful Bunch
+   </h2>
+   
 
-        <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            class="flex-1 px-6 py-4 rounded-lg border-0 focus:ring-2 focus:ring-floral-orange outline-none"
-          />
-          <button
-            class="bg-floral-orange text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-300 whitespace-nowrap"
-          >
-            Subscribe
-          </button>
-        </div>
-      </div>
-    </section>
+   <div class="flex flex-col sm:flex-row gap-0 max-w-md mx-auto w-full">
+     <input
+       type="email"
+       placeholder="Write email"
+       class="flex-1 px-6 py-4 rounded-l-lg rounded-r-none border-0 focus:ring-2 focus:ring-floral-orange outline-none"
+     />
+     <button
+       class="bg-floral-orange text-white px-8 py-4 rounded-r-lg rounded-l-none font-semibold hover:bg-orange-600 transition-all duration-300 whitespace-nowrap"
+       style="margin-left:0"
+     >
+       Subscribe
+     </button>
+   </div>
+ </div>
+</section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white px-4 lg:px-8 py-12">
+    <footer class="text-white px-4 lg:px-8 py-12">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Logo & Description -->
