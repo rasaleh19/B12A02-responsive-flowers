@@ -34,35 +34,36 @@
   <body class="bg-white">
     <!-- Navbar -->
     <nav class="bg-white px-4 lg:px-8 py-4">
-      <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="max-w-7xl mx-auto flex items-center justify-between w-full">
         <!-- Logo -->
         <div class="flex items-center space-x-2">
           <img
             src="assets/logo.png"
             alt="Paidge"
-            class="h-[82px] w-[135px] max-w-full max-h-[82px] object-contain"
-            style="height:82px;width:135px;"
+            class="h-[48px] w-auto max-w-full object-contain"
+            style="height:48px;max-width:135px;"
           />
         </div>
 
-        <!-- Desktop Menu -->
-        <div class="hidden lg:flex items-center space-x-8">
-          <a
-            href="#"
-            class="text-gray-700 hover:text-floral-orange transition-colors"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="text-gray-700 hover:text-floral-orange transition-colors"
-            >Shop</a
-          >
-          <a
-            href="#"
-            class="text-gray-700 hover:text-floral-orange transition-colors"
-            >About us</a
-          >
-
+        <!-- Nav Links (right, hidden on mobile) and Cart (always visible) -->
+        <div class="flex items-center space-x-8">
+          <div class="hidden lg:flex items-center space-x-8">
+            <a
+              href="#"
+              class="text-gray-700 hover:text-floral-orange transition-colors"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-floral-orange transition-colors"
+              >Shop</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-floral-orange transition-colors"
+              >About us</a
+            >
+          </div>
           <div
             class="flex items-center space-x-2 bg-floral-orange text-white px-4 py-2 rounded-lg"
           >
@@ -79,38 +80,15 @@
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 4.5M7 13h10m-8 8a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z"
               ></path>
             </svg>
-            <span>Cart</span>
+            <span class="font-semibold">Cart</span>
           </div>
-        </div>
-
-        <!-- Mobile Cart -->
-        <div
-          class="lg:hidden flex items-center space-x-2 bg-floral-orange text-white px-4 py-2 rounded-lg"
-        >
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 4.5M7 13h10m-8 8a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z"
-            ></path>
-          </svg>
-          <span>Cart</span>
         </div>
       </div>
     </nav>
 
     <!-- Hero Banner -->
     <section class="px-4 lg:px-8 py-16 lg:py-24 flex justify-center">
-      <div
-        class="w-full max-w-[71.25rem] h-[28.8125rem] flex items-center"
-        style="min-height: 461px; min-width: 1140px"
-      >
+      <div class="w-full max-w-7xl mx-auto flex items-center" style="min-height: 461px;">
         <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
           <!-- Content - Desktop Left, Mobile After Image -->
           <div class="order-2 lg:order-1 text-center lg:text-left">
@@ -120,7 +98,7 @@
               ALWAYS <span style="color: #e95a08">FRESH</span><br />
               <span style="color: #e95a08">FLOWERS</span>
             </h1>
-            <p class="text-[1.375rem] text-gray-600 mb-8 max-w-lg">
+            <p class="text-[1.375rem] text-gray-600 mb-8 max-w-lg text-left lg:text-left">
               Indulge your senses with the beauty and fragrance of our fresh
               flower shop. From classic roses to exotic blooms, we offer a wide
               variety of fresh flowers that are perfect for any occasion.
