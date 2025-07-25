@@ -177,9 +177,9 @@
     </section>
 
     <!-- Plants Lover Section -->
-    <section class="px-4 lg:px-8 py-16">
+    <section class="px-4 lg:px-8 py-16 relative">
       <div class="max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="grid lg:grid-cols-2 gap-12 items-center relative">
           <!-- Image - Desktop Left, Mobile Top -->
           <div class="order-1 relative">
             <div class="relative">
@@ -189,7 +189,8 @@
                 class="w-full h-auto rounded-2xl shadow-xl max-w-[540px] max-h-[597px] mx-auto lg:mx-0"
                 style="width: 100%; height: auto"
               />
-              <!-- Trusted Badge - Hidden on Mobile -->
+              <!-- Trusted Badge: Majority over image, slight overlap into adjacent div -->
+              <img src="assets/trusted-badge.png" alt="Trusted Seller" class="absolute z-30 right-[-40px] top-[-80px] w-[200px] h-[200px] hidden lg:block" style="pointer-events:none;" />
             </div>
           </div>
 
